@@ -1,0 +1,20 @@
+window.PRODUCTS = [
+  {id:"P001",name:"PANEL RAM 1GB",category:"PANEL HOSTING",price:5000,oldPrice:7000,art:"1GB",rating:4.9,sold:320,badge:"START"},
+  {id:"P002",name:"PANEL RAM 2GB",category:"PANEL HOSTING",price:10000,oldPrice:12000,art:"2GB",rating:4.9,sold:410,badge:"BEST"},
+  {id:"P003",name:"PANEL RAM 3GB",category:"PANEL HOSTING",price:20000,oldPrice:24000,art:"3GB",rating:4.9,sold:290,badge:"BEST"},
+  {id:"P004",name:"PANEL RAM 4GB",category:"PANEL HOSTING",price:30000,oldPrice:35000,art:"4GB",rating:4.9,sold:380,badge:"HOT"},
+  {id:"P005",name:"PANEL RAM 5GB",category:"PANEL HOSTING",price:40000,oldPrice:45000,art:"5GB",rating:4.8,sold:210,badge:"PROMO"},
+  {id:"P006",name:"PANEL RAM 6GB",category:"PANEL HOSTING",price:45000,oldPrice:52000,art:"6GB",rating:4.8,sold:180,badge:"PROMO"},
+  {id:"P007",name:"PANEL RAM 7GB",category:"PANEL HOSTING",price:50000,oldPrice:58000,art:"7GB",rating:4.8,sold:160,badge:"PROMO"},
+  {id:"P008",name:"PANEL RAM 8GB",category:"PANEL HOSTING",price:55000,oldPrice:65000,art:"8GB",rating:4.8,sold:150,badge:"PROMO"},
+  {id:"P009",name:"PANEL RAM 9GB",category:"PANEL HOSTING",price:60000,oldPrice:70000,art:"9GB",rating:4.8,sold:140,badge:"PROMO"},
+  {id:"P010",name:"PANEL RAM UNLIMITED",category:"PANEL HOSTING",price:70000,oldPrice:85000,art:"UNL",rating:4.9,sold:260,badge:"UNLIMITED"},
+  {id:"P011",name:"VPS R16 C8",category:"VPS",price:100000,oldPrice:125000,art:"VPS",rating:4.9,sold:115,badge:"PREMIUM"},
+  {id:"P012",name:"VPS R32 C16",category:"VPS",price:150000,oldPrice:180000,art:"R32",rating:4.9,sold:85,badge:"PREMIUM"},
+  {id:"P013",name:"BOT HOSTING STANDARD",category:"BOT HOSTING",price:25000,oldPrice:35000,art:"BOT",rating:4.8,sold:220,badge:"HOT"},
+  {id:"P014",name:"BOT HOSTING PREMIUM",category:"BOT HOSTING",price:50000,oldPrice:65000,art:"PRO",rating:4.9,sold:190,badge:"PRO"},
+  {id:"P015",name:"CANVA PRO 1 BULAN",category:"SOFTWARE",price:15000,oldPrice:25000,art:"C",rating:4.7,sold:500,badge:"PROMO"},
+  {id:"P016",name:"MICROSOFT 365 PERSONAL",category:"SOFTWARE",price:59000,oldPrice:79000,art:"365",rating:4.8,sold:210,badge:"PROMO"},
+  {id:"P017",name:"GOOGLE PLAY VOUCHER 100K",category:"VOUCHER",price:96000,oldPrice:100000,art:"GP",rating:4.9,sold:155,badge:"VOUCHER"},
+  {id:"P018",name:"STEAM WALLET 60K",category:"VOUCHER",price:57000,oldPrice:65000,art:"ST",rating:4.8,sold:300,badge:"GAMING"}
+];

@@ -1,0 +1,12 @@
+{
+  "name": "rexx-market-digital-v2-vercel",
+  "version": "2.1.0",
+  "private": true,
+  "description": "REXX MARKET DIGITAL V2 - Vercel Serverless + Pakasir QRIS + Telegram",
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}

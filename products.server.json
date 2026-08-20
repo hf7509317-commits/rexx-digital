@@ -1,0 +1,110 @@
+[
+  {
+    "id": "P001",
+    "name": "PANEL RAM 1GB",
+    "category": "PANEL HOSTING",
+    "price": 5000
+  },
+  {
+    "id": "P002",
+    "name": "PANEL RAM 2GB",
+    "category": "PANEL HOSTING",
+    "price": 10000
+  },
+  {
+    "id": "P003",
+    "name": "PANEL RAM 3GB",
+    "category": "PANEL HOSTING",
+    "price": 20000
+  },
+  {
+    "id": "P004",
+    "name": "PANEL RAM 4GB",
+    "category": "PANEL HOSTING",
+    "price": 30000
+  },
+  {
+    "id": "P005",
+    "name": "PANEL RAM 5GB",
+    "category": "PANEL HOSTING",
+    "price": 40000
+  },
+  {
+    "id": "P006",
+    "name": "PANEL RAM 6GB",
+    "category": "PANEL HOSTING",
+    "price": 45000
+  },
+  {
+    "id": "P007",
+    "name": "PANEL RAM 7GB",
+    "category": "PANEL HOSTING",
+    "price": 50000
+  },
+  {
+    "id": "P008",
+    "name": "PANEL RAM 8GB",
+    "category": "PANEL HOSTING",
+    "price": 55000
+  },
+  {
+    "id": "P009",
+    "name": "PANEL RAM 9GB",
+    "category": "PANEL HOSTING",
+    "price": 60000
+  },
+  {
+    "id": "P010",
+    "name": "PANEL RAM UNLIMITED",
+    "category": "PANEL HOSTING",
+    "price": 70000
+  },
+  {
+    "id": "P011",
+    "name": "VPS R16 C8",
+    "category": "VPS",
+    "price": 100000
+  },
+  {
+    "id": "P012",
+    "name": "VPS R32 C16",
+    "category": "VPS",
+    "price": 150000
+  },
+  {
+    "id": "P013",
+    "name": "BOT HOSTING STANDARD",
+    "category": "BOT HOSTING",
+    "price": 25000
+  },
+  {
+    "id": "P014",
+    "name": "BOT HOSTING PREMIUM",
+    "category": "BOT HOSTING",
+    "price": 50000
+  },
+  {
+    "id": "P015",
+    "name": "CANVA PRO 1 BULAN",
+    "category": "SOFTWARE",
+    "price": 15000
+  },
+  {
+    "id": "P016",
+    "name": "MICROSOFT 365 PERSONAL",
+    "category": "SOFTWARE",
+    "price": 59000
+  },
+  {
+    "id": "P017",
+    "name": "GOOGLE PLAY VOUCHER 100K",
+    "category": "VOUCHER",
+    "price": 96000
+  },
+  {
+    "id": "P018",
+    "name": "STEAM WALLET 60K",
+    "category": "VOUCHER",
+    "price": 57000
+  }
+]
