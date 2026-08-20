@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071a35">
+  <title>REXX MARKET DIGITAL</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="topline">FAST RESPON • TERPERCAYA • DIGITAL STORE</div>
+    <header class="header">
+      <div class="brand" data-page="home">
+        <img id="storeProfile" src="/assets/store-profile.svg" alt="REXX MARKET DIGITAL">
+        <div><strong id="storeName">REXX MARKET DIGITAL</strong><span id="storeTagline">DIGITAL MARKETPLACE</span></div>
+      </div>
+      <div class="search"><input id="searchInput" placeholder="CARI PRODUK DIGITAL..." autocomplete="off"><button id="searchBtn">CARI</button></div>
+      <div class="head-actions">
+        <button class="head-btn" id="wishBtn">WISHLIST <b id="wishCount">0</b></button>
+        <button class="head-btn" id="cartBtn">KERANJANG <b id="cartCount">0</b></button>
+      </div>
+    </header>
+
+    <nav class="nav"><div id="categoryNav"></div></nav>
+
+    <main>
+      <section id="homePage" class="page active">
+        <div class="container hero">
+          <div class="hero-copy">
+            <span class="eyebrow">REXX MARKET DIGITAL</span>
+            <h1>PRODUK DIGITAL<br><em>CEPAT • AMAN • PRAKTIS</em></h1>
+            <p>Panel hosting, VPS, software, voucher dan produk digital pilihan dengan proses pembelian terstruktur.</p>
+            <button class="primary" data-page="products">LIHAT PRODUK</button>
+          </div>
+          <div class="hero-art">
+            <div class="ring ring-a"></div><div class="ring ring-b"></div>
+            <div class="core">REXX<br><small>DIGITAL</small></div>
+          </div>
+        </div>
+
+        <div class="container trust-grid">
+          <div><b>PEMBAYARAN QRIS</b><span>Terhubung ke Pakasir</span></div>
+          <div><b>PROSES CEPAT</b><span>Order tercatat otomatis</span></div>
+          <div><b>DATA TERSTRUKTUR</b><span>Form buyer tersimpan aman</span></div>
+          <div><b>SUPPORT</b><span>Notifikasi Telegram admin</span></div>
+        </div>
+
+        <div class="container section">
+          <div class="section-head"><div><span class="eyebrow">CATALOG</span><h2>PRODUK UNGGULAN</h2></div><button class="link-btn" data-page="products">LIHAT SEMUA →</button></div>
+          <div class="product-grid" id="featuredGrid"></div>
+        </div>
+
+        <div class="container promo">
+          <div><span class="eyebrow">DIGITAL INFRASTRUCTURE</span><h2>PANEL LEGAL • VPS • BOT HOSTING</h2><p>Solusi digital dengan tampilan profesional dan alur checkout terintegrasi.</p></div>
+          <button class="primary" data-page="products">BELANJA SEKARANG</button>
+        </div>
+      </section>
+
+      <section id="productsPage" class="page">
+        <div class="container section">
+          <div class="section-head">
+            <div><span class="eyebrow">CATALOG</span><h2>SEMUA PRODUK</h2><p id="resultText"></p></div>
+            <select id="sortSelect"><option value="popular">PALING POPULER</option><option value="low">HARGA TERENDAH</option><option value="high">HARGA TERTINGGI</option><option value="az">A - Z</option></select>
+          </div>
+          <div class="filters" id="filters"></div>
+          <div class="product-grid" id="productsGrid"></div>
+        </div>
+      </section>
+
+      <section id="checkoutPage" class="page">
+        <div class="container section checkout-layout">
+          <div>
+            <span class="eyebrow">CHECKOUT</span><h2>ISI DATA PEMBELIAN</h2>
+            <form id="checkoutForm" class="form-card">
+              <label>NAMA LENGKAP<input name="name" required maxlength="80"></label>
+              <label>GMAIL / EMAIL<input type="email" name="email" required maxlength="120"></label>
+              <label>USERNAME / ID<input name="username" required maxlength="80"></label>
+              <label>NOMOR WHATSAPP<input name="whatsapp" required maxlength="25" inputmode="tel"></label>
+              <label>CATATAN <span class="muted">(OPSIONAL)</span><textarea name="note" maxlength="500"></textarea></label>
+              <button class="primary" type="submit" id="payBtn">BUAT PESANAN & QRIS</button>
+              <div class="form-error" id="formError"></div>
+            </form>
+          </div>
+          <aside class="order-card"><h3>RINGKASAN ORDER</h3><div id="checkoutItems"></div><div class="order-total"><span>TOTAL</span><strong id="checkoutTotal">Rp0</strong></div></aside>
+        </div>
+      </section>
+
+      <section id="paymentPage" class="page">
+        <div class="container section payment-wrap">
+          <div class="payment-card">
+            <span class="eyebrow">PEMBAYARAN</span>
+            <h2>SCAN QRIS UNTUK MELANJUTKAN</h2>
+            <div class="status" id="paymentStatus">MENUNGGU PEMBAYARAN</div>
+            <div class="qr-box"><img id="qrImage" alt="QRIS pembayaran"><div id="qrFallback"></div></div>
+            <div class="payment-info">
+              <div><span>ORDER ID</span><b id="paymentOrderId">-</b></div>
+              <div><span>NOMINAL</span><b id="paymentAmount">-</b></div>
+              <div><span>EXPIRED</span><b id="paymentExpired">-</b></div>
+            </div>
+            <p class="muted">Setelah pembayaran berhasil, sistem akan memverifikasi status transaksi. Jangan menutup halaman sebelum status berubah.</p>
+            <button class="secondary" id="refreshPayment">CEK STATUS PEMBAYARAN</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="container footer-grid">
+      <div><img id="footerProfile" class="footer-logo" src="/assets/store-profile.svg"><h3 id="footerName">REXX MARKET DIGITAL</h3><p>Marketplace produk digital dengan checkout QRIS dan notifikasi transaksi.</p></div>
+      <div><h4>LAYANAN</h4><a href="#">CARA ORDER</a><a href="#">PEMBAYARAN</a><a href="#">BANTUAN</a></div>
+      <div><h4>KATEGORI</h4><a data-page="products">PANEL HOSTING</a><a data-page="products">VPS</a><a data-page="products">SOFTWARE</a></div>
+      <div><h4>KONTAK</h4><p id="contactText">ADMIN</p></div>
+    </div><div class="copyright">© 2026 REXX MARKET DIGITAL</div></footer>
+  </div>
+
+  <div class="drawer" id="cartDrawer"><div class="drawer-backdrop"></div><aside><div class="drawer-head"><h2>KERANJANG</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="drawer-foot"><div><span>TOTAL</span><strong id="cartTotal">Rp0</strong></div><button class="primary" id="checkoutBtn">LANJUT CHECKOUT</button></div></aside></div>
+
+  <div class="modal" id="detailModal"><div class="modal-backdrop"></div><div class="modal-card"><button class="modal-close" id="closeDetail">×</button><div id="detailContent"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="/js/products.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
